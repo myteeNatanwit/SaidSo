@@ -21,4 +21,4 @@ for 3. - requires MFMailComposeViewControllerDelegate - import MessageUI.
 ## note 2
 - MVC design pattern
 - puplic classes for encapsulate and easy to track
-- max 400 line of Code for eazy reading
+- max 400 lines of Code for eazy reading
