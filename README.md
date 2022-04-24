@@ -18,3 +18,7 @@ for 2. - requires CNContactPickerDelegate - import ContactsUI.
 
 for 3. - requires MFMailComposeViewControllerDelegate - import MessageUI.
 
+## note 2
+- MVC design pattern
+- puplic classes for encapsulate and easy to track
+- max 400 line of Code for eazy reading
