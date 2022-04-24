@@ -2,6 +2,7 @@
 ## The requirements 
 1.     Use the They Said So API (https://theysaidso.com/api/)
   a.     Set the email subject to the quote title
+  
   b.     Set the message body to the quote and author
   
 2.     The user can specify a list of recipients.
