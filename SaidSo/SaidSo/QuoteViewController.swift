@@ -24,9 +24,18 @@ class QuoteViewController: UIViewController {
             return };
         
         QuoteCore.QueryQuote(self.displayResult); // calling from GUI only
-
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(checkAction));
+        self.view.addGestureRecognizer(gesture);
+        
+       
     }
     
+    @objc func checkAction(sender : UITapGestureRecognizer) {
+        QuoteCore.QueryQuote(self.displayResult); // calling from GUI only
+       
+    }
+   
 }
 
 // MARK: local functions

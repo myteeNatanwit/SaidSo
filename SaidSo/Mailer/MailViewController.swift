@@ -10,19 +10,7 @@ import MessageUI
 import ContactsUI
 
 class MailViewController: UITableViewController {
-    
-    @IBAction func contactPickbtnClicked(_ sender: Any) {
-        pickContacts();
-    }
-    @IBAction func sendBtnClick(_ sender: Any) {
-        if MFMailComposeViewController.canSendMail() {
-            MailCore.prepareMailList();
-            showMailComposer();
-        } else {
-            self.showAlert(title: "Device Error", message: "Email has not been setup. Abort!");
-        }
-    }
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // add two buttons on right side
@@ -38,6 +26,7 @@ class MailViewController: UITableViewController {
             return
         }
     }
+    
     @objc func sendTapped () {
         if MFMailComposeViewController.canSendMail() {
             MailCore.prepareMailList();
